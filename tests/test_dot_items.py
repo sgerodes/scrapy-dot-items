@@ -1,5 +1,5 @@
 import scrapy
-from src.dot_items import dot_item, dot_items_globally
+from src.scrapy_dot_items import dot_item, dot_items_globally
 
 
 def test_dot_items_mixin():

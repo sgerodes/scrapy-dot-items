@@ -4,18 +4,12 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setup(
-    name='three-commas',
-    packages=['three_commas',
-              'three_commas.api',
-              'three_commas.api.ver1',
-              'three_commas.api.v2',
-              'three_commas.model',
-              'three_commas.utils',
-              'three_commas.streams',
+    name='scrapy-dot-items',
+    packages=['scrapy_dot_items',
               ],
-    version='0.2.7',
-    description='Python api wrapper for 3commas with extended functionality in the api, models, error handling',
-    url='https://github.com/badass-blockchain/python-three-commas',
+    version='0.1.0',
+    description='A Scrapy addon that allows to access arguments via the dot',
+    url='https://github.com/sgerodes/scrapy-items',
     author='Sergey Gerodes',
     author_email='sgerodes@gmail.com',
     long_description=long_description,
