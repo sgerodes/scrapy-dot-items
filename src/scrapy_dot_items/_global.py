@@ -5,6 +5,10 @@ logger = logging.getLogger(__name__)
 
 
 def dot_items_globally():
+    """
+    Allows the dot syntax to all classes that inherit from srapy.Item
+    Use this function once at the start of the program
+    """
     def global__setattr__decorator(scrapy__setattr__):
         def dot__setattr__(self, name, value):
             if name.startswith('_'):

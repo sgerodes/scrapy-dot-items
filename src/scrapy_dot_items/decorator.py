@@ -5,9 +5,10 @@ def dot_item(scrapy_item_class):
     A decorator for scrapy items
     @dot_item
     class YourScrapyItem(scrapy.Item):
+        your_field = scrapy.Field()
+        ...
 
-    :param scrapy_item_class:
-    :return:
+    :param scrapy_item_class: a class that inherits from scrapy.Item
     """
     class ScrapyDotItem(scrapy_item_class):
         def __getattr__(self, key):
