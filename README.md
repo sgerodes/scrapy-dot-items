@@ -34,10 +34,6 @@ You can add functionality with the dot_item decorator to a single class
 
     dot_scrapy_item.price = 1000
     print(dot_scrapy_item.price)  # prints 1000
-    
-    dot_scrapy_item['price'] = 2000  # you can still set and get the items the regular way too
-    print(dot_scrapy_item.get('price'))  # prints 2000
-
 
 ### Apply to all scrapy items 
 
@@ -55,3 +51,19 @@ You can apply this functionality globally
 
     dot_scrapy_item.price = 1000
     print(dot_scrapy_item.price)  # prints 1000
+
+## Backwards compatibility
+
+scrapy-dot-items are backwards compatible. You can install it into your old project and mix regular and dot style. 
+    
+    dot_scrapy_item['price'] = 2000  # you can still set and get the items the regular way too
+    print(dot_scrapy_item.get('price'))  # prints 2000
+    print(dot_scrapy_item.price)  # prints 2000
+
+
+## For developers
+
+This project uses pipenv instead of pip. Setu
+- intall pipenv with 'pip install pipenv'
+- create a virtual environment using pipenv with 'pipenv shell' in the root directory
+- install the dependencies with 'pipenv install'
