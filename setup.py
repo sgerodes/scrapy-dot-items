@@ -32,10 +32,10 @@ setup(
     package_dir={'': 'src'},
     package_data={"scrapy_dot_items": ["VERSION"]},
     keywords=['python', 'scrapy', 'scrapy-items', 'dot-items', 'dot'],
-    python_requires='>=3.6',
+    python_requires='>=3.7',
     classifiers=[
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
