@@ -61,9 +61,9 @@ scrapy-dot-items are backwards compatible. You can install it into your old proj
     print(dot_scrapy_item.price)  # prints 2000
 
 
-## For developers
+## For contributers
 
-This project uses pipenv instead of pip. Setu
+This project uses pipenv instead of pip. Setup:
 - intall pipenv with 'pip install pipenv'
 - create a virtual environment using pipenv with 'pipenv shell' in the root directory
 - install the dependencies with 'pipenv install'
