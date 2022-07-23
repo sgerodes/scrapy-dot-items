@@ -67,3 +67,7 @@ This project uses pipenv instead of pip. Setu
 - intall pipenv with 'pip install pipenv'
 - create a virtual environment using pipenv with 'pipenv shell' in the root directory
 - install the dependencies with 'pipenv install'
+
+Attention:
+Please install all packages with 'pipenv install <package_name>'. Do NOT use 'pip install ...'.
+The same for unistalling 'pipenv uninstall <package_name>'

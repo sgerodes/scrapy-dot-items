@@ -16,6 +16,7 @@ setup(
     long_description_content_type='text/markdown',
     py_modules=['some_module'],
     package_dir={'': 'src'},
+    package_data={"scrapy_dot_items": ["VERSION"]},
     keywords=['python', 'scrapy', 'scrapy-items', 'dot-items', 'dot'],
     python_requires='>=3.6',
     classifiers=[
