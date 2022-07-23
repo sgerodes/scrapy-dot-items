@@ -9,7 +9,7 @@ scrapy_dot_items_version = (
 )
 
 assert os.path.isfile("src/version.py")
-with open("scrapy_dot_items/VERSION", "w", encoding="utf-8") as fh:
+with open("src/VERSION", "w", encoding="utf-8") as fh:
     fh.write("%s\n" % scrapy_dot_items_version)
 
 
@@ -30,7 +30,7 @@ setup(
     long_description_content_type='text/markdown',
     py_modules=['some_module'],
     package_dir={'': 'src'},
-    package_data={"scrapy_dot_items": ["VERSION"]},
+    package_data={"src": ["VERSION"]},
     keywords=['python', 'scrapy', 'scrapy-items', 'dot-items', 'dot'],
     python_requires='>=3.7',
     classifiers=[
