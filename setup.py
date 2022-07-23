@@ -8,7 +8,6 @@ scrapy_dot_items_version = (
     .strip()
 )
 
-assert os.path.isfile("cf_remote/version.py")
 with open("scrapy_dot_items/VERSION", "w", encoding="utf-8") as fh:
     fh.write("%s\n" % scrapy_dot_items_version)
 
