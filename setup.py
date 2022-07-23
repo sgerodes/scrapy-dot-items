@@ -8,9 +8,9 @@ scrapy_dot_items_version = (
     .strip()
 )
 
-assert os.path.isfile("src/version.py")
-with open("src/VERSION", "w", encoding="utf-8") as fh:
-    fh.write("%s\n" % scrapy_dot_items_version)
+# assert os.path.isfile("src/version.py")
+# with open("src/VERSION", "w", encoding="utf-8") as fh:
+#     fh.write("%s\n" % scrapy_dot_items_version)
 
 
 with open('README.md', 'r') as fh:
@@ -19,10 +19,8 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='scrapy-dot-items',
-    packages=['scrapy_dot_items',
-              ],
+    packages=['scrapy_dot_items',],
     version=scrapy_dot_items_version,
-    #version='0.1.14',
     description='A Scrapy addon that allows to access arguments via the dot',
     url='https://github.com/sgerodes/scrapy-items',
     author='Sergey Gerodes',
@@ -31,7 +29,7 @@ setup(
     long_description_content_type='text/markdown',
     py_modules=['some_module'],
     package_dir={'': 'src'},
-    package_data={"src": ["VERSION"]},
+    #package_data={"src": ["VERSION"]},
     keywords=['python', 'scrapy', 'scrapy-items', 'dot-items', 'dot'],
     python_requires='>=3.7',
     classifiers=[
