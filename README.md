@@ -1,5 +1,15 @@
 # Title
 
+## Description
+
+Simplifies the scrapy items, letting you access the attriburtes via the dot 
+
+    regular_scrapy_item['some_field'] = 42 # the regular bulky way to do it
+    print(regular_scrapy_item.get('some_field'))
+
+    scrapy_dot_item.some_field = 42  # the simple dot-items way
+    print(scrapy_dot_item.some_field)
+
 ## Installation
 
     pip install scrapy-dot-items
