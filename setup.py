@@ -7,7 +7,7 @@ setup(
     name='scrapy-dot-items',
     packages=['scrapy_dot_items',
               ],
-    version='0.1.0',
+    version='0.1.1',
     description='A Scrapy addon that allows to access arguments via the dot',
     url='https://github.com/sgerodes/scrapy-items',
     author='Sergey Gerodes',

@@ -4,10 +4,14 @@
 
 Simplifies the scrapy items, letting you access the attriburtes via the dot 
 
-    regular_scrapy_item['some_field'] = 42 # the regular bulky way to do it
+The regular bulky way to do it:
+
+    regular_scrapy_item['some_field'] = 42
     print(regular_scrapy_item.get('some_field'))
 
-    scrapy_dot_item.some_field = 42  # the simple dot-items way
+The simple dot-items way:
+
+    scrapy_dot_item.some_field = 42
     print(scrapy_dot_item.some_field)
 
 ## Installation
@@ -30,6 +34,9 @@ You can add functionality with the dot_item decorator to a single class
 
     dot_scrapy_item.price = 1000
     print(dot_scrapy_item.price)  # prints 1000
+    
+    dot_scrapy_item['price'] = 2000  # you can still set and get the items the regular way too
+    print(dot_scrapy_item.get('price'))  # prints 2000
 
 
 ### Apply to all scrapy items 
