@@ -2,7 +2,10 @@
 
 ## Description
 
-Simplifies the scrapy items, letting you access the attriburtes via the dot 
+For those who are tired to use scrapy's brackets and quotes. 
+In one line of code this library will increase teh readability of your code, make it more stable to human error.
+And will introduce IDEs code completion features to your scrapy items. 
+You will be abel to use scrapy items as normal python objects using dot syntax.
 
 The regular bulky way to do it:
 
